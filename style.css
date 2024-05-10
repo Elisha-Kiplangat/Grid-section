@@ -73,6 +73,10 @@ img{
   grid-column: 1/2;
   background-color: #fff;
 }
+.card3 img,
+.card5 img{
+  border: 2px solid hsl(263, 55%, 52%);
+}
 .card4{
   grid-row: 2/3;
   grid-column: 2/4;
@@ -102,6 +106,7 @@ img{
     body{
       padding: 20px;
     }
+    
     main{
       grid-template-columns: repeat(4, 1fr);
       grid-template-rows: repeat(3, min-content);
@@ -124,9 +129,10 @@ img{
 
   @media (max-width: 375px){
     main{
-      margin-top: 20px;
+      width: 320px;
+      margin: 10px;
       grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
-      grid-template-rows: minmax(auto, auto);
+      grid-template-rows: minmax(auto, auto); 
     }
     .card{
       grid-column: unset !important;
